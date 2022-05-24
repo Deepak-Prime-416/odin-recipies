@@ -10,24 +10,24 @@ body{
 }
 .title{
     object-fit: scale-down(0.2);
-    margin-top:2em;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 1em;
+    width: auto;
+    margin:2% 30%;
+    padding: 0.5em;
     text-align: center;
     color: rgb(255, 239, 219);
-    font-size: 2em;
+    font-size: 4em;
     background-color: rgba(119,79,43);
-    border-radius: 2em;
+    border-radius: 1em;
 }
 .message{
-    width: 40%;
+    height:min-content;
+    width: 80%;
     background-color : rgb(255, 239, 219,0.9) ;
     border-radius: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
     padding : 4em 0em;
     color: rgba(119,79,43);
@@ -40,8 +40,136 @@ body{
     font-size: 2em;
     padding: 0.5em 0em;
 }
-.message h3{
+.message p{
     padding: 1em;
     font-size : 1.5em
 
+}
+.dishes{
+    display: flex;
+    margin :2% 5%;
+    justify-content: space-between;
+}
+.recipe-biriyani{
+    margin: 2em 2em;
+    display: block;
+    background-image: url("../recipies/biriyani/biriyani.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 18em;
+    width: 30em;
+}
+.recipe-ramen{
+    margin: 2em 2em;
+    display: block;
+    background-image: url("../recipies/ramen/ramen.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 18em;
+    width: 30em;
+}
+.recipe-hot-chat{
+    margin: 2em 2em;
+    display: block;
+    background-image: url("../recipies/hot-chat/hot-chat.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 18em;
+    width: 30em;
+}
+a{
+    text-decoration: none;
+}
+.name{
+    object-fit: cover;
+    height: 100%;
+    line-height: 9em;
+    font-size: 2em;
+    padding: auto 0em;
+    color: rgb(255, 239, 219);
+    background-color: rgba(119,79,43,0.8);
+    opacity: 0;
+    transition:0.5s;
+}
+.name:hover{
+    opacity: 1;
+}
+.menu{
+    background-color: rgba(119,79,43);
+    margin:1em auto;
+    color: rgb(255, 239, 219);
+    padding: 1em;
+    width: 60%;
+    height: 1em;
+    border-radius: 2em;
+}
+h1{
+    object-fit: scale-down(0.2);
+    width: auto;
+    margin:2% 30%;
+    padding: 0.4em;
+    text-align: center;
+    color: rgb(255, 239, 219);
+    font-size: 3em;
+    background-color: rgba(119,79,43);
+    border-radius: 1em;
+}
+.row img{
+    width: 30em;
+    height:18em;
+    border-radius: 3em;
+    margin: 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.column-1{
+    margin: 0em 2em;
+}
+.ing{
+    background-color: rgb(255, 239, 219);  
+    font-size: 1.4em;  
+    padding: 2em;
+    border-radius: 2em;
+    height: max-content;
+}
+.ing h2,
+.ins h2{
+    background-color: rgba(119,79,43);
+    width : 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    color: rgb(255, 239, 219);
+    text-align: center;
+}
+.ing ul{
+    list-style: none;
+    padding: 0em 2em;
+}
+.ins{
+    margin: 0em 2em;
+    background-color: rgb(255, 239, 219);
+    border-radius: 2em;
+    font-size: 1.5em;
+    padding: 3em;
+    line-height: 2.5em;
+}
+.ins ol{
+    list-style: lower-roman;
+    padding: 1em;
+}
+.exit{
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(119,79,43);
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    color: rgb(255, 239, 219);
 }
